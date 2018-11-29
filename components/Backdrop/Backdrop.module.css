@@ -1,0 +1,12 @@
+.Backdrop {
+    background-color: white;
+    opacity: .5;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    z-index: 899;
+}

@@ -1,0 +1,238 @@
+.HeaderText {
+    font-family: 'K2D';
+    font-size: 313%;
+    left: 0px;
+    width: 30%;
+    position: absolute;
+    z-index: 500;
+    padding: 80px;
+    padding-left: 50px;
+    padding-right: 60px;
+    color: white;
+    font-weight: 400;
+    top: 180px;
+    cursor: pointer;
+    overflow: visible;
+  }
+
+  .HeaderText span {
+    overflow: visible;
+    white-space: nowrap;
+  }
+
+  .Name {
+    color: #118CD6;
+    overflow: visible;
+    font-weight: 300;
+    position: absolute;
+    top: 60px;
+    left: 160px;
+    animation-name: fade;
+    animation-duration: 6s;
+    opacity: 1;
+    transition: all .8s ease;
+    text-shadow: 0px 0px 50px rgba(17,140,214, .6);
+  }
+  
+  @keyframes fade {
+    0% {opacity: 0; text-shadow: 0px 0px 50px rgba(17,140,214, .6);}
+    8% {opacity: 0; text-shadow: 0px 0px 50px rgba(17,140,214, .6);}
+    30% {opacity: 1; text-shadow: 0px 0px 50px rgba(17,140,214, .6);}
+    60% {text-shadow: 0px 0px 400px rgba(17,140,214, 10.2);}
+    100% {text-shadow: 0px 0px 50px rgba(17,140,214, .6);}
+  }
+  
+  .Hi {
+    color: #118CD6;
+    text-shadow: 0px 0px 50px rgba(17,140,214, .6);
+    position: absolute;
+    animation-name: rotates;
+    animation-duration: 1.5s;
+    transform: rotate(360deg);
+    top: 0px;
+    left: 150px;
+    transition: all .8s ease;
+  }
+  
+  @keyframes rotates {
+    from {transform: rotate(0deg); left: -60px;}
+    to {transform: rotate(360deg); left: 150px;}
+  }
+  
+  .My {
+    text-shadow: 0px 0px 50px rgba(255, 255, 255, .6);
+    position: absolute;
+    animation-name: rotatesdown;
+    animation-duration: 1.5s;
+    transform: rotateX(0deg);
+    top: 0px;
+    left: 220px;
+    opacity: 1;
+    transition: all .8s ease;
+    
+  }
+  
+  @keyframes rotatesdown {
+    from {transform: rotateX(150deg); opacity: 0; top: -30px;}
+    to {transform: rotateX(0deg); opacity: 1; top: 0px;}
+  }
+  
+
+  .HeaderText:hover .My {
+    position: absolute;
+    animation-name: rotatesup;
+    animation-duration: 1s;
+    transform: rotateX(150deg);
+    opacity: 0;
+    top: 0px;
+    left: 220px;
+    transition: all .8s ease;
+  }
+
+
+  .HeaderText:hover .Hi {
+    position: absolute;
+    top: 0px;
+    animation-name: rotatesback;
+    animation-duration: 1s;
+    transform: rotate(0deg);
+    left: -60px;
+    transition: all .8s ease;
+  }
+
+  .HeaderText:hover .Name {
+    font-weight: 300;
+    position: absolute; 
+    top: 60px;
+    left: 160px;
+    animation-name: fadeout;
+    animation-duration: 1s;
+    opacity: 0;
+    transition: all .8s ease;
+  }
+   
+  @keyframes rotatesup {
+    from {transform: rotateX(0deg); opacity: 1; top: 0px;}
+    to {transform: rotateX(150deg); opacity: 0; top: -30px;}
+  }
+  
+
+  
+  @keyframes rotatesback {
+    from {transform: rotate(360deg); left: 150px;}
+    to {transform: rotate(0deg); left: -60px;}
+  }
+
+  
+  @keyframes fadeout {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+
+
+  .MyRemove {
+    position: absolute;
+    animation-name: rotatesup;
+    animation-duration: 1s;
+    transform: rotateX(150deg);
+    opacity: 0;
+    top: 0px;
+    left: 220px;
+    transition: all .8s ease;
+  }
+
+  .HiRemove {
+    position: absolute;
+    top: 0px;
+    animation-name: rotatesback;
+    animation-duration: 1s;
+    transform: rotate(0deg);
+    left: -60px;
+    transition: all .8s ease;
+  }
+
+  .NameRemove {
+    font-weight: 300;
+    position: absolute; 
+    top: 60px;
+    left: 160px;
+    animation-name: fadeout;
+    animation-duration: 1s;
+    opacity: 0;
+    transition: all .8s ease;
+  }
+
+  @media (max-width: 600px) {
+    .HeaderText {
+      width: 100%;
+    }
+
+    .Hi {
+      left: 60px;
+    }
+
+    @keyframes rotates {
+      from {transform: rotate(0deg); left: -60px;}
+      to {transform: rotate(360deg); left: 60px;}
+    }
+
+    .My {
+      left: 130px;
+    }
+
+    .Name {
+      left: 75px;
+    }
+
+    .HeaderText:hover .My {
+      left: 130px;
+    }
+  
+    .HeaderText:hover .Hi {
+      left: -60px;
+    }
+
+    @keyframes rotatesback {
+      from {transform: rotate(360deg); left: 60px;}
+      to {transform: rotate(0deg); left: -60px;}
+    }
+  
+    .HeaderText:hover .Name {
+      top: 60px;
+      left: 75px; 
+    }
+
+    .MyRemove {
+
+      left: 130px;
+
+    }
+
+    .NameRemove {
+
+      left: 75px;
+
+    }
+    
+  }
+
+  @media (max-width: 500px) and (max-height: 700px) {
+    .Hi {
+      left: 60px;
+    }
+    @keyframes rotates {
+      from {transform: rotate(0deg); left: -60px;}
+      to {transform: rotate(360deg); left: 60px;}
+    }
+
+    .HeaderText:hover .Hi {
+      position: absolute;
+      top: 0px;
+      animation-name: rotatesback;
+      animation-duration: 1s;
+      transform: rotate(0deg);
+      left: -1000px;
+      transition: all .8s ease;
+    }
+    
+  }

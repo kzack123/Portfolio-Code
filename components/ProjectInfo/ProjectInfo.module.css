@@ -1,0 +1,215 @@
+.Project {
+    background-color: #242628;
+    font-family: 'K2D';
+    z-index: 900;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    margin: 0px 0px;
+    opacity: 1;
+    border-radius: 1%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1.2);
+    animation-name: show;
+    animation-duration: .4s;
+    transition: all .4s ease;
+}
+
+@keyframes show {
+    from {top: 100%; opacity: 0;}
+    to {top: 10%; opacity: 1;}
+}
+
+.ProjectRemove {
+    top: 100%; 
+    opacity: 0;
+}
+
+.Project img {
+    border-radius: 1%;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0px;
+    transition: all .5s ease;
+}
+
+.picHolder img:hover {
+    transform: scale(1.2);
+}
+
+.picHolder {
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Project h1 {
+    color: white;
+    margin-top: 10px;
+    
+}
+
+.Project p {
+    color: white;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 1.3vw;
+    margin-bottom: 70px;
+}
+
+.MeP p {
+    color: white;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 1.3vw;
+    margin-bottom: 10px;
+}
+
+.MeP {
+    margin-bottom: 60px;
+}
+
+.Quote {
+    font-weight: 100;
+    color: gray;
+} 
+
+.Me img {
+    width: 80%;
+    height: 100%;
+    border-radius:10%;
+}
+
+.Me {
+    height: 250px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1240px) {
+    .Project p {
+        color: white;
+        width: 70%;
+        margin-left: 15%;
+        font-size: 1.5vw;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .Project {
+        background-color: #242628;
+        z-index: 900;
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        width: 60%;
+        
+        margin: 0px 0px;
+        opacity: 1;
+        border-radius: 1%;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 1.2);
+        animation-name: show;
+        animation-duration: .4s;
+        transition: all .4s ease;
+    }
+
+    .picHolder {
+        height: 300px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .Project img {
+        margin: 0px;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+    .Project p {
+        color: white;
+        width: 86%;
+        margin-left: 7%;
+        font-size: 1.8vw;
+    }
+
+    .ProjectRemove {
+        top: 100%; 
+        opacity: 0;
+    }
+}
+
+@media (max-width: 880px) {
+    .Project p {
+        color: white;
+        width: 70%;
+        margin-left: 15%;
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 780px) {
+    .picHolder {
+        height: 350px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .Project {
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        
+    }
+    .Project p {
+        font-size: 2.4vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .Project p {
+        font-size: 2.9vw;
+    }
+
+    .Project h1 {
+        font-size: 5.2vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .Project h1 {
+        font-size: 6.2vw;
+    }
+
+    .Project p {
+        font-size: 3.9vw;
+        color: white;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+
+    .Project {
+        top: 12%;
+        left: 5%;
+        width: 90%;
+        
+    }
+
+    .picHolder {
+        height: 260px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .Me {
+        height: 180px;
+        width: 100%;
+    }
+
+    @keyframes show {
+        from {top: 100%; opacity: 0;}
+        to {top: 12%; opacity: 1;}
+    }
+}

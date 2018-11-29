@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+html, body {
+  overflow: hidden;
+  touch-action: none;
+    -ms-touch-action: none;
+    -ms-touch-select: none;
+}
+body {
+  position: relative;
+}

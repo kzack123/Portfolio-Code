@@ -1,0 +1,117 @@
+.Contact {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 38%;
+    left: 0px;
+    font-family: 'K2D';
+    transition: all 1.2s ease;
+    width: 100%;
+    height: 70%;
+    animation-name: add;
+    animation-duration: 1.2s;
+}
+
+@keyframes add {
+    0% {top: 800px;}
+    100% {top: 38%;}
+}
+
+.ContactAdd {
+    top: 200px;
+    left: 0px;
+}
+
+.ContactRemove {
+    transition: all 1.2s ease;
+    top: 800px;
+}
+
+
+.contactContainer {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 22%;
+    font-family: 'K2D';
+    transition: all 1.2s ease;
+    width: 100%;
+    height: 70%;
+    animation-name: addContent;
+    animation-duration: 1.2s;
+}
+
+@keyframes addContent {
+    0% {top: 800px;}
+    100% {top: 22%;}
+}
+
+.ContactLinks img {
+    cursor: pointer;
+    width: 6%;
+    margin: 40px 15px 0px 15px;
+    transition: all .2s ease;
+}
+
+.ContactLinks img:hover {
+    transform: scale(1.2); 
+}
+
+.Copyrights {
+    top: 80%;
+    position: absolute;
+    font-size: 12px;
+    color: lightgray;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.BackgroundDiv {
+    width: 100%;
+    height: 600px;
+    opacity: .94;
+}
+
+.BackgroundDiv img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (max-width: 750px) {
+    .ContactLinks img {
+        cursor: pointer;
+        width: 10%;
+        margin: 40px 15px 0px 15px;
+        transition: all .2s ease;
+    }
+}
+
+@media (max-width: 500px) {
+    .ContactLinks img {
+        cursor: pointer;
+        width: 18%;
+        margin: 10px 15px 0px 15px;
+        transition: all .2s ease;
+    }
+
+    .contactContainer {
+        top: 17%;
+    }
+
+    @keyframes addContent {
+        0% {top: 800px;}
+        100% {top: 17%;}
+    }
+
+    .Copyrights {
+        top: 90%;
+    }
+}
+
+
+
